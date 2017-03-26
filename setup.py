@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from distutils.core import setup
-from culmqtt import __version__ as ver
+from mqttstatus import __version__ as ver
 
 
 setup(name="status-mqtt",
