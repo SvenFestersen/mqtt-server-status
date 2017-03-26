@@ -2,7 +2,9 @@
 import os
 import platform
 import re
+import subprocess
 import sys
+import time
 
 
 def get_platform():
@@ -41,6 +43,7 @@ def get_memory():
         percent_used = 100*used/total
         
     return {"total": sizeof_fmt(total), "avail": sizeof_fmt(avail),
+            "total_bytes": total, "avail_bytes": avail,
             "percent_used": round(percent_used, 1)}
 
 
